@@ -49,9 +49,16 @@ namespace Swap
 
         private void button4_Click(object sender, EventArgs e)
         {
+            lloyd.TellMe("Hello", lucinda);
+
             lloyd = lucinda;
             lloyd.Earsize = 4321;
             lloyd.WhoAmI();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            lucinda.SpeakTo(lloyd, "Witaj");
         }
     }
 }
